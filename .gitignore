@@ -25,3 +25,7 @@ dist-ssr
 
 .env
 .env.local
+
+# Arquivos auxiliares da IA
+.ai-context/
+bundle-ai.js
