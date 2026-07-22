@@ -44,6 +44,12 @@ const App = () => {
   }, [isComplete, loading]);
 
   const handleManualSave = async () => {
+    // Se for visitante, avisa com carinho e para por aqui!
+    if (isGuest) {
+      showToast("Visitantes não podem salvar, só podem olhar :3 🌸");
+      return;
+    }
+
     setSaveModalStatus('loading');
     await new Promise(r => setTimeout(r, 800)); 
     const success = await forceSave();
