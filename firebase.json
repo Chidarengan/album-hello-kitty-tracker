@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "contador-album-hello-kitty",
     "public": "dist",
     "ignore": [
       "firebase.json",
